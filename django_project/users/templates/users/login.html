@@ -5,12 +5,12 @@
     <form method="post">
         {% csrf_token %}
         <fieldset>
-            <legend>Join Us</legend>   
+            <legend>Log In</legend>   
                 {{ form|crispy }}
         </fieldset>
-        <button type="Submit">Register</button>
+        <button type="Submit">Sign In</button>
     </form>
-    <small>Already a part of our family?
-        <a href="{% url 'login' %}">Login</a>
+    <small>Need an account?
+        <a href="{% url 'register' %}">Register</a>
     </small>
 {% endblock content %}
